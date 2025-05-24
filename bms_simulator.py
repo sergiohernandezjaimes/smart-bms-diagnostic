@@ -45,7 +45,8 @@ with open(filename, mode='a', newline='') as file:
         writer.writeheader()
         writer.writerow(data)
         
-def stream_data(interval=1):
+def stream_data(interval=1, iterations=10):
+    for _ in range(iterations):
     while True:
         data = simulate_bms_data()
         print(f"{data['timestamp']} | SOC: {data['soc']}%, Voltage: {data['voltage']}V, Current: {data['current']}A, Temp: {data['temperature']}C") | STATUS: {data['status']}")
