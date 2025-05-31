@@ -1,21 +1,41 @@
-# 🔋 Smart BMS Diagnostic
+# 🔋 Smart BMS Diagnostic Dashboard
 
-A simple simulation of a Battery Management System (BMS) that generates and logs real-time data - include SOC, voltage, current, and temperature. Usefule for prototyping embedded systems, data pipelines, or AI-powered diagnostic tools.
+A real-time simulation and diagnostic dashboard for Battery Management Systems (BMS), built with Python and Streamlit. This tool simulates live data, injects faults, and visualizes key system metrics such as SOC, voltage, current, and temperature — all in an interactive web UI.
 
-## 📦 Features
+## ⚙️ Features
 
+- Simulated real-time BMS log generation
+- Fault injection engine with multiple fault types
+- Interactive dashboard using Streamlit
+- Live filtering by fault type
+- Summary of fault counts
+- Upload your own BMS CSV logs
 
-- Simulates BMS metrics using realistic value ranges
-- Streams data to the console
-- Logs output to a timestamped CSV file
-- Modular for future extensions: fault injection, dashboards, diagnostics, etc.
+## 🌐 Live Demo
 
-- ## 📁 Files
+👉 [View the Dashboard on Streamlit Cloud](https://smart-bms-dashboard.streamlit.app/)
 
-- `bms_simulator.py` – Core simulation + CSV logger
-- `bms_log.csv` – Auto-generated log of real-time sensor data
+## 🖥️ Demo
 
-- ## 🚀 How to Run
+![Live Demo](./demo.gif)
+
+## 🚀 How to Run Locally
 
 ```bash
-python bms_simulator.py
+git clone https://github.com/sergiohernandezjaimes/smart-bms-diagnostic.git
+cd smart-bms-diagnostic
+pip install -r requirements.txt
+streamlit run dashboard.py
+
+## 📦 Tech Stack
+
+- Python
+- Streamlit
+- Pandas
+- Matplotlib
+
+## ✍️ Author
+
+**Sergio Hernandez**  
+GitHub: [@sergiohernandezjaimes](https://github.com/sergiohernandezjaimes.com/)
+LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/sergio-hernandez-1948b0159.com/)
