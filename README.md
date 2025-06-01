@@ -26,7 +26,7 @@ git clone https://github.com/sergiohernandezjaimes/smart-bms-diagnostic.git
 cd smart-bms-diagnostic
 pip install -r requirements.txt
 streamlit run dashboard.py
-
+```
 ## 📦 Tech Stack
 
 - Python
